@@ -1,24 +1,31 @@
 import React from 'react'
-import TrackVisibility from 'react-on-screen'
 import './content.scss'
 import VisibilitySensor from 'react-visibility-sensor';
+import { fadeInLeft, fadeOutRight } from 'react-animations'
+import Radium, {StyleRoot} from 'radium';
 
 
   
   const Item = (props) =>{
     var style = {
-      visibility: props.isVisible ? 'visible' : 'hidden'
+      visibility: 'visible',
+      animation: 'fadeIn .5s',
+      animationName: Radium.keyframes(fadeInLeft, 'fadeIn')
     };
+    var styler = () =>{
+      return props.isVisible ? style : {opacity: '0',animation: 'x .5s',animationName: Radium.keyframes(fadeOutRight, 'fadeOut')}
+    }
+    
     return (
-      <div style={style}>
+      <StyleRoot>
+      <div  style={styler()}>
         <h1>{props.element.name}</h1>
         <div>{props.element.content}</div>
       </div>
+      </StyleRoot>
     )
   }
-
-
-
+  
 class Content extends React.Component {
 
 
