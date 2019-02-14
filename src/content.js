@@ -53,7 +53,7 @@ class Content extends React.Component {
       name: 'About Me',
       content: <p style={this.elementStyles.about}>"I am a senior,IT major, at 
       <span style={this.elementStyles.red}> Delaware</span> 
-      <span style={this.elementStyles.blue}> State</span><span style={this.elementStyles.red}> <u>University</u></span>. I have expirence in full-stack web
+      <span style={this.elementStyles.blue}>State</span><span style={this.elementStyles.red}> <u>University</u></span>. I have expirence in full-stack web
       development, system adminastration, and database managment.
       I have also completed projects that involved robotics, as well as android app development!"</p>,
       reference: '#About',
