@@ -34,7 +34,7 @@ class Content extends React.Component {
 
   elementStyles = {
     about:{
-      fontSize: '40px',
+      fontSize: '35px',
       minWidth: '0',
       maxWidth: '720px',
       margin: ' 0 auto',
