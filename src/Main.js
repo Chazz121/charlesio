@@ -6,7 +6,7 @@ import './Main.scss'
 
 class Main extends React.Component {
 
-    bannerHeight = '100vh'
+    bannerHeight = '101vh'
     sidebarWidth = 400
 
     render() {
