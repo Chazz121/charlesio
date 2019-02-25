@@ -3,6 +3,7 @@ import './content.scss'
 import VisibilitySensor from 'react-visibility-sensor';
 import { fadeInLeft, fadeOutRight } from 'react-animations'
 import Radium, {StyleRoot} from 'radium';
+import Languages from './Languages.js'
 
 
   
@@ -22,7 +23,7 @@ import Radium, {StyleRoot} from 'radium';
     }
     return (
       <StyleRoot>
-      <div  style={styler()}>
+      <div  style={styler()} id={props.element.reference}>
         <h1>{props.element.name}</h1>
         <div>{props.element.content}</div>
       </div>
@@ -39,6 +40,7 @@ class Content extends React.Component {
       maxWidth: '720px',
       margin: ' 0 auto',
       padding: '15px',
+      listStyleType: 'none',
     },
     blue:{
       color:'#6495ed'
@@ -53,15 +55,20 @@ class Content extends React.Component {
       name: 'About Me',
       content: <p style={this.elementStyles.about}>"I am a senior,IT major, at 
       <span style={this.elementStyles.red}> Delaware</span> 
-      <span style={this.elementStyles.blue}>State</span><span style={this.elementStyles.red}> <u>University</u></span>. I have expirence in full-stack web
+      <span style={this.elementStyles.blue}>State</span>. I have expirence in full-stack web
       development, system adminastration, and database managment.
-      I have also completed projects that involved robotics, as well as android app development!"</p>,
-      reference: '#About',
+      I have also completed projects involving robotics, as well as android app development!"</p>,
+      reference: 'AboutMe',
     },
     {
-      name: 'Projects',
-      content: 'A few of the projects i have been workin on',
-      reference: '',
+      name: 'Familiar with...',
+      content: <div style={this.elementStyles.about}><Languages /></div>,
+      reference: 'Tools',
+    },
+    {
+      name:'Contact Info',
+      content:'',
+      reference:'ContactInfo'
     }
   ]
 

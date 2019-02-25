@@ -19,7 +19,7 @@ class Banner extends React.Component {
             banner: {
                 height: this.state.height,
                 width: '100vw',
-                backgroundColor: '#f26e6e',
+                backgroundColor: '#f53939',
                 position: 'relative',
                 overflow: 'hidden',
                 transition: 'height ease .5s',
@@ -28,7 +28,7 @@ class Banner extends React.Component {
             greeting: {
                 textAlign: 'center',
                 margin: 'auto ',
-                color: '#edbcff',
+                color: '#ffbfbf',
                 height: '100%',
                 width: '100%',
                 verticalAlign: 'center',
