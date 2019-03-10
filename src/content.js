@@ -42,6 +42,12 @@ class Content extends React.Component {
       padding: '15px',
       listStyleType: 'none',
     },
+    tools:{
+      fontSize: '35px',
+      minWidth: '0',
+      maxWidth: '720px',
+      listStyleType: 'none',
+    },
     blue:{
       color:'#6495ed'
     },
@@ -62,7 +68,7 @@ class Content extends React.Component {
     },
     {
       name: 'Familiar with...',
-      content: <div style={this.elementStyles.about}><Languages /></div>,
+      content: <div style={this.elementStyles.tools}><Languages /></div>,
       reference: 'Tools',
     },
     {

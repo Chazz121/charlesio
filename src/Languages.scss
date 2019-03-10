@@ -1,5 +1,19 @@
 .Languages{
-    li{
-        margin-bottom: 45px;
+    position: relative;
+    display: block;
+    list-style: none;
+
+        .logo{
+            margin:10px;
+            padding: 10px;
+            background: rgba(255, 0, 0, 0.651);
+            border-radius: 100px;
+            
+        }
+    .styleRoot{
+        width: 100%;
+        left:0;
+        text-align: right;
+        display: inline-block;
     }
 }
